@@ -1,0 +1,222 @@
+.card {
+    background-color: white;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 2.5rem;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.skills,
+.languages {
+    display: flex;
+    gap: 12px;
+}
+
+.skills span {
+    color: hsl(180, 29%, 50%);
+    font-weight: 700;
+    background: hsl(180, 31%, 95%);
+    padding: 4px 8px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
+.logo_details {
+    display: flex;
+    align-items: center;
+}
+
+.company {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.company h4 {
+    color: hsl(180, 29%, 50%);
+    font-weight: 700;
+}
+
+.company p {
+    background-color: hsl(180, 29%, 50%);
+    color: white;
+    font-weight: 600;
+    border-radius: 15px;
+    padding: 6px 8px 2px 8px;
+}
+
+.company span {
+    background-color: hsl(180, 14%, 20%);
+    color: white;
+    border-radius: 15px;
+    padding: 6px 8px 2px 8px;
+}
+
+
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.about h3:hover {
+    color: hsl(180, 29%, 50%);
+    cursor: pointer;
+}
+
+.about h3 {
+    transition: ease 0.3s;
+}
+
+.details {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 1rem;
+}
+
+.separator {
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: hsl(180, 8%, 52%)
+}
+
+.details span {
+    color: hsl(180, 8%, 52%);
+    font-weight: 500;
+}
+
+.skills span {
+    transition: 0.3s;
+}
+
+.skills span:hover {
+    background-color: hsl(180, 29%, 50%);
+    ;
+    color: white;
+}
+
+.filters {
+    background: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 0.7rem 2.3rem;
+}
+
+.filters,
+.filter_langs {
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+    margin-top: -2rem;
+}
+
+.tools {
+    display: flex;
+    gap: 12px;
+}
+
+.remove_icon {
+    background-color: hsl(180, 29%, 50%);
+    padding: 6px;
+    border-radius: 4px;
+    transition: ease 0.3s;
+}
+
+.selected_filter {
+    display: flex;
+    gap: 12px;
+}
+
+.selected_role,
+.selected_level,
+.selected_tools,
+.selected_langs {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: hsl(180, 52%, 96%);
+    color: hsl(180, 29%, 50%);
+    font-weight: 700
+}
+
+.remove_icon:hover {
+    cursor: pointer;
+    background-color: hsl(180, 14%, 20%);
+}
+
+.filter_container {
+    display: flex;
+    gap: 12px;
+}
+
+.clear_btn {
+    background-color: transparent;
+    border: none;
+    color: hsl(180, 29%, 50%);
+    font-size: 15px;
+    font-weight: 700;
+    transition: text-decoration ease-in 0.5s;
+}
+
+.clear_btn:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width:890px) {
+    .card {
+        flex-direction: column;
+        max-width: 40rem;
+        width: 100%;
+        margin: 5rem auto;
+        padding: 12px;
+        align-items: flex-start;
+    }
+
+    .skills {
+        flex-wrap: wrap;
+    }
+
+    .logo_details {
+        display: block
+    }
+
+    .about {
+        gap: 1rem;
+        margin: 1rem 0;
+    }
+
+    .logo {
+        margin-top: -3.5rem;
+    }
+
+    .company,
+    .details,
+    .languages {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width:630px) {
+
+    .filter_container,
+    .selected_filter {
+        flex-wrap: wrap;
+    }
+
+    .filters {
+        flex-direction: column;
+    }
+}
